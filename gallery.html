@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
     <style>
       h1 {
-          margin: 0;
-          padding-bottom: 6rem;
-          grid-column: 1;
-          grid-row: 1;
-          z-index: 1;
-          font-family: 'Teko', sans-serif;
-          font-size: 10rem;
-          text-transform: uppercase;
-          animation: glow 2s ease-in-out infinite alternate;
-          text-align: center;
+        margin: 0;
+        padding-bottom: 6rem;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+        font-family: "Teko", sans-serif;
+        font-size: 10rem;
+        text-transform: uppercase;
+        animation: glow 2s ease-in-out infinite alternate;
+        text-align: center;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 20px #055a05;
         }
-        
-        @keyframes glow {
-          from {
-            text-shadow: 0 0 20px #055a05;
-          }
-          to {
-            text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
-          }
+        to {
+          text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
+        }
       }
       .header {
         padding: 30px;
         text-align: center;
         font-size: 80px;
         background-color: black;
-        background-repeat : no-repeat;
+        background-repeat: no-repeat;
         background-size: 1600px;
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
         margin-top: 0;
-        } 
-      
+      }
+
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #c2ebdb;}
-      
+        background-color: #c2ebdb;
+      }
+
       .nav {
         overflow: hidden;
         background-color: black;
-        top: 0;}
-      
+        top: 0;
+      }
+
       .nav a {
         float: left;
         color: floralwhite;
         text-align: center;
         padding: 15px 20px;
-        font-size: 20px;}
-      
+        font-size: 20px;
+      }
+
       .nav a:hover {
         background-color: rgb(148, 235, 133);
-        color:black;}
-      
+        color: black;
+      }
+
       .nav a.active {
         background-color: rgb(71, 214, 71);
-        color:floralwhite;}
-      
+        color: floralwhite;
+      }
+
       .search {
         float: right;
         margin-top: 15px;
         margin-right: 15px;
       }
-      
+
       footer {
         padding: 15px;
         text-align: left;
         background-color: rgb(71, 214, 71);
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
       }
-  
+
       .gallery {
         text-align: center;
       }
-  
+
       table {
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
         width: 20%;
       }
-  
+
       img {
-      border-collapse: collapse;
+        border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
         width: 500px;
@@ -98,76 +103,107 @@
       a {
         text-decoration: none;
       }
-         
-      
-      </style>
-</head>
 
-    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
-    
-    <h1 class="header">Gallery</h1>
-    
-    <body>
-    <div>
-    </div>
+      .enlarged {
+        width: 400px;
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Teko:700&display=swap"
+    rel="stylesheet"
+  />
+
+  <h1 class="header">Gallery</h1>
+
+  <body>
+    <div></div>
     <div class="nav">
-        <a href="http://www.thesustainablefuture.org/">Home</a>
-        <a href="news.html">News</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-        <a class="active" href="gallery.html">Gallery</a>
+      <a href="http://www.thesustainablefuture.org/">Home</a>
+      <a href="news.html">News</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+      <a class="active" href="gallery.html">Gallery</a>
     </div>
 
     <div class="gallery">
-        <h2>Paul Nicklen</h2>
-    <table>
-    <tr>
-        <td><img src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM8389-220415-18640_KBG.jpg" alt="huskies"></td>
-        <td><img src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM7747-072410-39212.jpg" alt="spirit bear"></td>
-        <td><img src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/p180A-e1542581698211.jpg" alt="pinniped"></td>
-    </tr>
-    </table>
-    <br>
-    <caption>Instagram: <a href="https://www.instagram.com/paulnicklen/">@paulnicklen</a>
-    Webpage: <a href="https://www.paulnicklen.com/">https://www.paulnicklen.com/</a></caption>
+      <h2>Paul Nicklen</h2>
+      <table>
+        <tr>
+          <td>
+            <img
+              src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM8389-220415-18640_KBG.jpg"
+              alt="huskies"
+            />
+          </td>
+          <td>
+            <img
+              src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM7747-072410-39212.jpg"
+              alt="spirit bear"
+            />
+          </td>
+          <td>
+            <img
+              src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/p180A-e1542581698211.jpg"
+              alt="pinniped"
+            />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <caption>
+        Instagram:
+        <a href="https://www.instagram.com/paulnicklen/">@paulnicklen</a>
+        Webpage:
+        <a href="https://www.paulnicklen.com/">https://www.paulnicklen.com/</a>
+      </caption>
     </div>
-    <br>
+    <br />
     <div class="gallery">
-        <h2>Cath Simard</h2>
-    <table>
-    <tr>
-        <td><img src="images/scotland.jpg" alt="scotland"></td>
-        <td><img src="images/hawaii.jpg" alt="hawaii"></td>
-        <td><img src="images/Kauai-3.jpg" alt="Kauai-3"></td>
-    </tr>
-    </table>
-    <br>
-    <caption>Instagram: <a href="https://www.instagram.com/cathsimard/">@cathsimard</a>
-    Webpage: <a href="https://www.cathsimard.com/">https://www.cathsimard.com/</a></caption>
+      <h2>Cath Simard</h2>
+      <table>
+        <tr>
+          <td><img src="images/scotland.jpg" alt="scotland" /></td>
+          <td><img src="images/hawaii.jpg" alt="hawaii" /></td>
+          <td><img src="images/Kauai-3.jpg" alt="Kauai-3" /></td>
+        </tr>
+      </table>
+      <br />
+      <caption>
+        Instagram:
+        <a href="https://www.instagram.com/cathsimard/">@cathsimard</a>
+        Webpage:
+        <a href="https://www.cathsimard.com/">https://www.cathsimard.com/</a>
+      </caption>
     </div>
-    <br>
+    <br />
     <div class="gallery">
-        <h2>Thomas Heaton</h2>
-    <table>
-    <tr>
-        <td><img src="images/hummingbird.jpg" alt="hummingbird"></td>
-        <td><img src="images/river.jpg" alt="river"></td>
-        <td><img src="images/mountain.jpg" alt="mountain"></td>
-    </tr>
-    </table>
-    <br>
-    <caption>Instagram: <a href="https://www.instagram.com/heatonthomas/">@heatonthomas</a>
-    Webpage: <a href="https://thomasheaton.co.uk/">https://thomasheaton.co.uk/</a></caption>
+      <h2>Thomas Heaton</h2>
+      <table>
+        <tr>
+          <td><img src="images/hummingbird.jpg" alt="hummingbird" /></td>
+          <td><img src="images/river.jpg" alt="river" /></td>
+          <td><img src="images/mountain.jpg" alt="mountain" /></td>
+        </tr>
+      </table>
+      <br />
+      <caption>
+        Instagram:
+        <a href="https://www.instagram.com/heatonthomas/">@heatonthomas</a>
+        Webpage:
+        <a href="https://thomasheaton.co.uk/">https://thomasheaton.co.uk/</a>
+      </caption>
     </div>
-    <br>
+    <br />
 
+    <script></script>
+  </body>
 
-    </body>
-    
-    <div>
+  <div>
     <footer>
-    <a href="sitemap.html">SITEMAP</a>
+      <a href="sitemap.html">SITEMAP</a>
     </footer>
-    </div>
-    
-    </html>
+  </div>
+</html>

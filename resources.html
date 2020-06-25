@@ -1,94 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resources</title>
     <style>
       h1 {
-          margin: 0;
-          padding-bottom: 6rem;
-          grid-column: 1;
-          grid-row: 1;
-          z-index: 1;
-          font-family: 'Teko', sans-serif;
-          font-size: 10rem;
-          text-transform: uppercase;
-          animation: glow 2s ease-in-out infinite alternate;
-          text-align: center;
+        margin: 0;
+        padding-bottom: 6rem;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+        font-family: "Teko", sans-serif;
+        font-size: 10rem;
+        text-transform: uppercase;
+        animation: glow 2s ease-in-out infinite alternate;
+        text-align: center;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 20px #055a05;
         }
-        
-        @keyframes glow {
-          from {
-            text-shadow: 0 0 20px #055a05;
-          }
-          to {
-            text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
-          }
+        to {
+          text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
+        }
       }
       .header {
         padding: 30px;
         text-align: center;
         font-size: 80px;
-        background-color: black; ;
-        background-repeat : no-repeat;
+        background-color: black;
+        background-repeat: no-repeat;
         background-size: 1600px;
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
         margin-top: 0;
-        } 
-      
+      }
+
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #f2f2f2}
-      
+        background-color: #f2f2f2;
+      }
+
       .nav {
         overflow: hidden;
         background-color: black;
-        top: 0;}
-      
+        top: 0;
+      }
+
       .nav a {
         float: left;
         color: floralwhite;
         text-align: center;
         padding: 15px 20px;
-        font-size: 20px;}
-      
+        font-size: 20px;
+      }
+
       .nav a:hover {
         background-color: rgb(148, 235, 133);
-        color:black;}
-      
+        color: black;
+      }
+
       .nav a.active {
         background-color: rgb(71, 214, 71);
-        color:floralwhite;}
-      
+        color: floralwhite;
+      }
+
       .search {
         float: right;
         margin-top: 15px;
         margin-right: 15px;
       }
-      
+
       footer {
         padding: 15px;
         text-align: left;
         background-color: rgb(71, 214, 71);
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
       }
-  
+
       .checklist {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;;
+        width: 50%;
       }
-      
+
       h2 {
         text-align: center;
         font-size: 45px;
       }
-  
+
       table {
         background-color: white;
         border: black solid 1px;
@@ -99,11 +104,13 @@
         width: 40;
         font-size: 20px;
       }
-  
-      tr, th, td {
-        border: black solid 1px
+
+      tr,
+      th,
+      td {
+        border: black solid 1px;
       }
-  
+
       .tedtalk {
         margin-left: 30%;
       }
@@ -111,18 +118,18 @@
       a {
         text-decoration: none;
       }
-  
-      
-      </style>
-</head>
+    </style>
+  </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
-    
-    <h1 class="header">Resources</h1>
-    
-    <body>
-    <div>
-    </div>
+  <link
+    href="https://fonts.googleapis.com/css?family=Teko:700&display=swap"
+    rel="stylesheet"
+  />
+
+  <h1 class="header">Resources</h1>
+
+  <body>
+    <div></div>
     <div class="nav">
       <a href="http://www.thesustainablefuture.org/">Home</a>
       <a href="news.html">News</a>
@@ -132,64 +139,106 @@
     </div>
 
     <div>
-        <h2>Ways you can be sustainable on your own</h2>
-        <br>
-        <iframe class="tedtalk" width="600" height="400" src="https://www.youtube.com/embed/pF72px2R3Hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <br>
-        <br>
-        <br>
-      </div>
+      <h2>Ways you can be sustainable on your own</h2>
+      <br />
+      <iframe
+        class="tedtalk"
+        width="600"
+        height="400"
+        src="https://www.youtube.com/embed/pF72px2R3Hg"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <br />
+      <br />
+      <br />
+    </div>
 
-    <br>
-    
+    <br />
+
     <div>
-        <h2>Resources & Getting Involved</h2>
-        <table>
-            <tr>
-                <th>Source</th>
-                <th>Brief Description</th>
-                <th>URL</th>
-            </tr>
-            <tr>
-                <td>National Geographic</td>
-                <td>The National Geographic Society is a non-profit scientific and educational organization.</td>
-                <td><a href="https://www.nationalgeographic.org/">https://www.nationalgeographic.org/</a></td>
-            </tr>
-            <tr>
-                <td>BBC Earth</td>
-                <td>BBC Earth is a media production organization as well as a news source for nature and history.</td>
-                <td><a href="https://www.bbcearth.com/">https://www.bbcearth.com/</a></td>
-            </tr>
-            <tr>
-              <td>Columbia Univeristy</td>
-              <td>Columbia's Center on Global Energy policy, provides educational information about both oil & coal as well as sustainable energy policies and carbon taxes. They run activities, programs, workshops, webinars, etc, and always invite guest speakers from other institutions.</td>
-              <td><a href="https://energypolicy.columbia.edu/">https://energypolicy.columbia.edu/</a></td>
-          </tr>
-            <tr>
-                <td>Business Green</td>
-                <td>Business news site dedicated towards green initiatives. </td>
-                <td><a href="https://www.businessgreen.com/">https://www.businessgreen.com/</a></td>
-            </tr>
-            <tr>
-                <td>4 Ocean</td>
-                <td>Non-profit organization that strives to clean up our oceans. They organize beach cleanups around the globe. </td>
-                <td><a href="https://4ocean.com/">https://4ocean.com/</a></td>
-            </tr>
-            <tr>
-                <td>Environmental Protection Agency</td>
-                <td>The EPA is a United States governement agency that specializes in environmental protection</td>
-                <td><a href="https://www.epa.gov/cleanups/cleanups-my-community#map">https://www.epa.gov/cleanups/cleanups-my-community#map</a></td>
-            </tr>
-        </table>
-        <br>
+      <h2>Resources & Getting Involved</h2>
+      <table>
+        <tr>
+          <th>Source</th>
+          <th>Brief Description</th>
+          <th>URL</th>
+        </tr>
+        <tr>
+          <td>National Geographic</td>
+          <td>
+            The National Geographic Society is a non-profit scientific and
+            educational organization.
+          </td>
+          <td>
+            <a href="https://www.nationalgeographic.org/"
+              >https://www.nationalgeographic.org/</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>BBC Earth</td>
+          <td>
+            BBC Earth is a media production organization as well as a news
+            source for nature and history.
+          </td>
+          <td>
+            <a href="https://www.bbcearth.com/">https://www.bbcearth.com/</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Columbia Univeristy</td>
+          <td>
+            Columbia's Center on Global Energy policy, provides educational
+            information about both oil & coal as well as sustainable energy
+            policies and carbon taxes. They run activities, programs, workshops,
+            webinars, etc, and always invite guest speakers from other
+            institutions.
+          </td>
+          <td>
+            <a href="https://energypolicy.columbia.edu/"
+              >https://energypolicy.columbia.edu/</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>Business Green</td>
+          <td>Business news site dedicated towards green initiatives.</td>
+          <td>
+            <a href="https://www.businessgreen.com/"
+              >https://www.businessgreen.com/</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>4 Ocean</td>
+          <td>
+            Non-profit organization that strives to clean up our oceans. They
+            organize beach cleanups around the globe.
+          </td>
+          <td><a href="https://4ocean.com/">https://4ocean.com/</a></td>
+        </tr>
+        <tr>
+          <td>Environmental Protection Agency</td>
+          <td>
+            The EPA is a United States governement agency that specializes in
+            environmental protection
+          </td>
+          <td>
+            <a href="https://www.epa.gov/cleanups/cleanups-my-community#map"
+              >https://www.epa.gov/cleanups/cleanups-my-community#map</a
+            >
+          </td>
+        </tr>
+      </table>
+      <br />
     </div>
-    
-    </body>
-    
-    <div>
+  </body>
+
+  <div>
     <footer>
-    <a href="sitemap.html">SITEMAP</a>
+      <a href="sitemap.html">SITEMAP</a>
     </footer>
-    </div>
-    
-    </html>
+  </div>
+</html>

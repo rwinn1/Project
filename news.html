@@ -1,162 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
     <style>
       h1 {
-          margin: 0;
-          padding-bottom: 6rem;
-          grid-column: 1;
-          grid-row: 1;
-          z-index: 1;
-          font-family: 'Teko', sans-serif;
-          font-size: 10rem;
-          text-transform: uppercase;
-          animation: glow 2s ease-in-out infinite alternate;
-          text-align: center;
+        margin: 0;
+        padding-bottom: 6rem;
+        grid-column: 1;
+        grid-row: 1;
+        z-index: 1;
+        font-family: "Teko", sans-serif;
+        font-size: 10rem;
+        text-transform: uppercase;
+        animation: glow 2s ease-in-out infinite alternate;
+        text-align: center;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 20px #055a05;
         }
-        
-        @keyframes glow {
-          from {
-            text-shadow: 0 0 20px #055a05;
-          }
-          to {
-            text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
-          }
+        to {
+          text-shadow: 0 0 30px #055a05, 0 0 10px #06f306;
+        }
       }
       .header {
         padding: 30px;
         text-align: center;
         font-size: 80px;
-        background-color: black;;
-        background-repeat : no-repeat;
+        background-color: black;
+        background-repeat: no-repeat;
         background-size: 1600px;
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
         margin-top: 0;
-        } 
-      
+      }
+
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color:#9fceab;
-        text-align: center;}
-      
+        background-color: #9fceab;
+        text-align: center;
+      }
+
       .nav {
         overflow: hidden;
         background-color: black;
-        top: 0;}
-      
+        top: 0;
+      }
+
       .nav a {
         float: left;
         color: floralwhite;
         text-align: center;
         padding: 15px 20px;
-        font-size: 20px;}
-      
+        font-size: 20px;
+      }
+
       .nav a:hover {
         background-color: rgb(148, 235, 133);
-        color:black;}
-      
+        color: black;
+      }
+
       .nav a.active {
         background-color: rgb(71, 214, 71);
-        color:floralwhite;}
-      
+        color: floralwhite;
+      }
+
       .search {
         float: right;
         margin-top: 15px;
         margin-right: 15px;
       }
-      
+
       footer {
         padding: 15px;
         text-align: left;
         background-color: rgb(71, 214, 71);
-        color:floralwhite;
+        color: floralwhite;
         margin-bottom: 0;
       }
-      
+
       .a-heading {
         color: white;
         font-size: 40px;
       }
-  
+
       p {
         text-emphasis: wrap;
         margin-left: 20%;
         margin-right: 20%;
       }
-      
+
       a {
         text-decoration: none;
       }
+    </style>
+  </head>
 
-      </style>
-</head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Teko:700&display=swap"
+    rel="stylesheet"
+  />
 
-    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
-    
-    <h1 class="header">News</h1>
-    
-    <body>
-    <div>
-    </div>
+  <h1 class="header">News</h1>
+
+  <body>
+    <div></div>
     <div class="nav">
-        <a href="http://www.thesustainablefuture.org/">Home</a>
-        <a class="active" href="news.html">News</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Contact</a>
-        <a href="gallery.html">Gallery</a>
+      <a href="http://www.thesustainablefuture.org/">Home</a>
+      <a class="active" href="news.html">News</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
     </div>
-    
+
     <div>
       <h2>News</h2>
-      <p>This page will be updated with the newest discoveries and innovations in the world of sustainability</p>
+      <p>
+        This page will be updated with the newest discoveries and innovations in
+        the world of sustainability
+      </p>
     </div>
 
     <div>
-      <h2 class="a-heading">Sustainability Industry Expected to Boom Post Pandemic</h2>
+      <h2 class="a-heading">
+        Sustainability Industry Expected to Boom Post Pandemic
+      </h2>
 
       <article>
-        <img src="images/msn.jpg" alt="msn">
-        <br>
-        <p> "Special Report: Since the outbreak of COVID-19, governments globally have been pumping fiscal stimulus into their economies, with an emphasis on sustainable, scalable tech..."<a href="https://www.msn.com/en-au/finance/markets/stocks-pivoting-to-sustainability-set-to-boom-post-pandemic/ar-BB15sQ60">Read More</a></p>
-      
+        <img src="images/msn.jpg" alt="msn" />
+        <br />
+        <p>
+          "Special Report: Since the outbreak of COVID-19, governments globally
+          have been pumping fiscal stimulus into their economies, with an
+          emphasis on sustainable, scalable tech..."<a
+            href="https://www.msn.com/en-au/finance/markets/stocks-pivoting-to-sustainability-set-to-boom-post-pandemic/ar-BB15sQ60"
+            >Read More</a
+          >
+        </p>
       </article>
-      <br>
+      <br />
     </div>
 
     <div>
-      <h2 class="a-heading">Even Large Oil Companies are Beginning to Go Green</h2>
+      <h2 class="a-heading">
+        Even Large Oil Companies are Beginning to Go Green
+      </h2>
 
       <article>
-        <img src="images/exxon.png" alt="exxon">
-        <br>
-        <p> "ExxonMobil took up the challenge of replacing MLPs, which the Indian government plans to phase out as part of its Plastic Waste Management Rules, with recyclable PE laminated solutions..."<a href="https://www.packworld.com/issues/sustainability/news/21137090/exxonmobil-exxonmobil-collaborates-on-sustainability-initiatives-for-india">Read More</a></p>
+        <img src="images/exxon.png" alt="exxon" />
+        <br />
+        <p>
+          "ExxonMobil took up the challenge of replacing MLPs, which the Indian
+          government plans to phase out as part of its Plastic Waste Management
+          Rules, with recyclable PE laminated solutions..."<a
+            href="https://www.packworld.com/issues/sustainability/news/21137090/exxonmobil-exxonmobil-collaborates-on-sustainability-initiatives-for-india"
+            >Read More</a
+          >
+        </p>
       </article>
-      <br>
+      <br />
     </div>
 
     <div>
       <h2 class="a-heading">How to Make People Care About Sustainability</h2>
 
       <article>
-        <img src="images/huff.jpeg" alt="huff">
-        <br>
-        <p> "On the banks of the Delaware River, a group of schoolchildren from North Philadelphia cluster around a fleet of colorful kayaks. None of them has ever been on water, despite the fact that this river..."" <a href="https://www.huffpost.com/entry/environment-nature-activism-cities-conservation_n_5e57f1aac5b60102210d9d31">Read More</a></p>
-      
+        <img src="images/huff.jpeg" alt="huff" />
+        <br />
+        <p>
+          "On the banks of the Delaware River, a group of schoolchildren from
+          North Philadelphia cluster around a fleet of colorful kayaks. None of
+          them has ever been on water, despite the fact that this river...""
+          <a
+            href="https://www.huffpost.com/entry/environment-nature-activism-cities-conservation_n_5e57f1aac5b60102210d9d31"
+            >Read More</a
+          >
+        </p>
       </article>
-      <br>
+      <br />
     </div>
-    
-    </body>
-    
-    <div>
+  </body>
+
+  <div>
     <footer>
-    <a href="sitemap.html">SITEMAP</a>
+      <a href="sitemap.html">SITEMAP</a>
     </footer>
-    </div>
-    
-    </html>
+  </div>
+</html>
