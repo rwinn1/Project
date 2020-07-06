@@ -125,6 +125,12 @@
         text-decoration: none;
       }
 
+      #error {
+        text-align: center;
+        font-size: 35px;
+        color: red;
+      }
+
       </style>
 </head>
 
@@ -152,21 +158,22 @@
     </div>
     
     <div class="contact">
+      <div id="error"></div>
         <div>
           <h2>Feedback</h2>
           <p class="subheading">Leave any comments or questions here.</p>
         </div>
     <div class="feedback">
-        <form>
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="First Name..">
+        <form id="form" name="form">
+          <label for="name">First Name</label>
+          <input type="text" id="name" name="name" placeholder="First Name..">
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Last Name..">
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name..">
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Email..">
           <label for="comment">Comments</label>
           <textarea id="comment" name="comment" placeholder="Type here.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
+          <button id="submit" type="submit">Submit</button>
         </form>
       </div>
       </div>
@@ -176,6 +183,35 @@
         <a href="sitemap.html">SITEMAP</a>
         </footer>
         </div>
+
+      <script>
+      const name = document.getElementById("name")
+      const last = document.getElementById("lastName")
+      const email = document.getElementById("email")
+      const form = document.getElementById("form")
+      const errorElement = document.getElementById("error") 
+
+      form.addEventListener("submit", (e) => {
+        let messages = [];
+        if (name.value === "" || name.value == null) {
+          messages.push("First Name is required");
+        }
+
+        if (last.value === "" || last.value == null) {
+          messages.push("Last Name is required");
+        }
+
+        if (email.value === "" || email.value == null) {
+          messages.push("Email is required");
+        }
+
+        if (messages.length > 0) {
+          e.preventDefault();
+          errorElement.innerText = messages.join(", ");
+        }
+      });
+      </script>
+
 
     </body>
     
