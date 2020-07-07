@@ -94,11 +94,11 @@
         float: bottom;
       }
 
-      .globe {
+      .slideshow {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 600px;
+        width: 1000px;
       }
 
       button {
@@ -146,7 +146,10 @@
       </article>
     </div>
     <button id="btn" type="button">Click Here for an Earth fact!</button>
-    <img class="globe" src="images/globe.png" alt="globe" />
+    <br>
+    <img class="slideshow" src="images/scotland.jpg" alt="scotland" />
+    <br>
+    <p class="homepage"><a href="gallery.html">Click Here</a> to see the full gallery</p>
 
     <script>
       function earthFact() {
@@ -156,7 +159,35 @@
         fact.innerText =
           "The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.";
       }
-      document.getElementById("btn").onclick = earthFact
+      document.getElementById("btn").onclick = earthFact;
+
+      const slides = [
+        "images/hawaii.jpg",
+        "images/hummingbird.jpg",
+        "images/Kauai-3.jpg",
+        "images/mountain.jpg",
+        "images/river.jpg",
+        "images/scotland.jpg",
+      ];
+
+      let i = 0;
+
+      const image = document.querySelector("img");
+
+      function slideShow() {
+        // console.log("running...");
+        if (i === slides.length) {
+          i = 0;
+        }
+        image.src = slides[i];
+
+        console.log(i);
+        i = i + 1;
+
+        setTimeout(slideShow, 1500);
+      }
+
+      document.querySelector("body").onload = slideShow;
     </script>
   </body>
 

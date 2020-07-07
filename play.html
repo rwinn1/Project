@@ -4,38 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    img {
+    width: 1000px;
+    }
+  </style>
 </head>
 <body>
+  <img src="images/scotland.jpg" alt="scotland" />
 
-  <img name="slide" width="400" height="200" >
-  
-<script>
-  const i = 0
-  const images = []
-  const time = 300;
+  <script>
+    const slides = [
+      "images/hawaii.jpg",
+      "images/hummingbird.jpg",
+      "images/Kauai-3.jpg",
+      "images/mountain.jpg",
+      "images/river.jpg",
+      "images/scotland.jpg",
+    ];
 
-  images[0] = "images/hawaii.jpg"
-  images[2] = "images/hummingbird.jpg"
-  images[3] = "images/mountain.jpg"
-  images[4] = "images/scotland.jpg"
-  images[5] = "images/river.jpg"
-  images[6] = "images/Kauai-3.jpg"
 
-  function changeImg(){
-    document.slide.src = images[i];
-    if (i < images.length - 1){
-      i++;
-    } else {
-      i = 0
+    let i = 0;
+
+    const image = document.querySelector("img");
+    
+
+    function slideShow() {
+      // console.log("running...");
+      if (i === slides.length) {
+        i = 0;
+      }
+      image.src = slides[i];
+
+      console.log(i);
+      i = i + 1;
+      
+      setTimeout(slideShow, 1500);
     }
 
-    setTimeout("changeImg()", time);
+    document.querySelector("body").onload = slideShow;
+  </script>
 
-  }
-
-  window.onload = changeImg;
-
-</script>
 
 </body>
 </html>
