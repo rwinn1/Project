@@ -98,6 +98,20 @@
       a {
         text-decoration: none;
       }
+
+      #welcome {
+        position: absolute;
+        color: black;
+        font-family: Arial;
+        font-size: 20px;
+      }
+      #top {
+        position: relative;
+        height: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(71, 214, 71) ;
+      }
     </style>
   </head>
 
@@ -118,11 +132,17 @@
       <a href="gallery.html">Gallery</a>
     </div>
 
+    <br>
+
+    <div id="top">
+      <h3 id="welcome">This text will move</h3>
+    </div>
+
     <div>
       <h2>News</h2>
       <p>
         This page will be updated with the newest discoveries and innovations in
-        the world of sustainability
+        the world of sustainability.
       </p>
     </div>
 
@@ -184,6 +204,36 @@
       </article>
       <br />
     </div>
+
+    <script>
+      const msgList = [
+        "Welcome",
+        "The Earth Needs Our Help",
+        "Lets Make A Difference Together",
+        "Learn About the Latest Environmental News!",
+      ];
+      const welcome = document.getElementById("welcome");
+      let p = 5;
+      let i = 0;
+
+      function move() {
+        welcome.innerHTML = msgList[i];
+        welcome.style.left = p + "px";
+        if (p > document.getElementById('top').clientWidth - 350) {
+          p = 5;
+          i++;
+          if (i === msgList.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 5;
+        }
+        setTimeout(move, 50);
+      }
+
+      
+      document.querySelector("body").onload = move;
+    </script>
   </body>
 
   <div>
