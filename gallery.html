@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="gallery of experienced nature photographers"/> 
-    <meta name="keywords" content="sustainability, green, photography, gallery, nature, outdoors"/>
+    <meta
+      name="description"
+      content="gallery of experienced nature photographers"
+    />
+    <meta
+      name="keywords"
+      content="sustainability, green, photography, gallery, nature, outdoors"
+    />
     <title>Gallery</title>
     <style>
       h1 {
@@ -94,7 +100,6 @@
         border-collapse: collapse;
         margin-left: auto;
         margin-right: auto;
-        width: 500px;
       }
 
       a {
@@ -133,18 +138,24 @@
             <img
               src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM8389-220415-18640_KBG.jpg"
               alt="huskies"
+              id="huskies"
+              width="500px"
             />
           </td>
           <td>
             <img
               src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/MM7747-072410-39212.jpg"
               alt="spirit bear"
+              id="bear"
+              width="500px"
             />
           </td>
           <td>
             <img
               src="https://www.paulnicklen.com/pn/wp-content/uploads/2018/11/p180A-e1542581698211.jpg"
               alt="pinniped"
+              id="pinniped"
+              width="500px"
             />
           </td>
         </tr>
@@ -162,9 +173,30 @@
       <h2>Cath Simard</h2>
       <table>
         <tr>
-          <td><img src="images/scotland.jpg" alt="scotland" /></td>
-          <td><img src="images/hawaii.jpg" alt="hawaii" /></td>
-          <td><img src="images/Kauai-3.jpg" alt="Kauai-3" /></td>
+          <td>
+            <img
+              src="images/scotland.jpg"
+              alt="scotland"
+              id="scotland"
+              width="500px"
+            />
+          </td>
+          <td>
+            <img
+              src="images/hawaii.jpg"
+              alt="hawaii"
+              id="hawaii"
+              width="500px"
+            />
+          </td>
+          <td>
+            <img
+              src="images/Kauai-3.jpg"
+              alt="Kauai-3"
+              id="kauai"
+              width="500px"
+            />
+          </td>
         </tr>
       </table>
       <br />
@@ -180,9 +212,25 @@
       <h2>Thomas Heaton</h2>
       <table>
         <tr>
-          <td><img src="images/hummingbird.jpg" alt="hummingbird" /></td>
-          <td><img src="images/river.jpg" alt="river" /></td>
-          <td><img src="images/mountain.jpg" alt="mountain" /></td>
+          <td>
+            <img
+              src="images/hummingbird.jpg"
+              alt="hummingbird"
+              id="hummingbird"
+              width="500px"
+            />
+          </td>
+          <td>
+            <img src="images/river.jpg" alt="river" id="river" width="500px" />
+          </td>
+          <td>
+            <img
+              src="images/mountain.jpg"
+              alt="mountain"
+              id="mountain"
+              width="500px"
+            />
+          </td>
         </tr>
       </table>
       <br />
@@ -195,7 +243,76 @@
     </div>
     <br />
 
-    <script></script>
+    <script>
+      function enlarge(imageId) {
+        let x = document.getElementById(imageId);
+        let w = x.width;
+        w = w * 1.5;
+        x.width = w;
+      }
+
+      document.getElementById("bear").onmouseover = function () {
+        enlarge("bear");
+      };
+      document.getElementById("huskies").onmouseover = function () {
+        enlarge("huskies");
+      };
+      document.getElementById("pinniped").onmouseover = function () {
+        enlarge("pinniped");
+      };
+      document.getElementById("scotland").onmouseover = function () {
+        enlarge("scotland");
+      };
+      document.getElementById("hawaii").onmouseover = function () {
+        enlarge("hawaii");
+      };
+      document.getElementById("kauai").onmouseover = function () {
+        enlarge("kauai");
+      };
+      document.getElementById("hummingbird").onmouseover = function () {
+        enlarge("hummingbird");
+      };
+      document.getElementById("river").onmouseover = function () {
+        enlarge("river");
+      };
+      document.getElementById("mountain").onmouseover = function () {
+        enlarge("mountain");
+      };
+
+      function reduce(imageId) {
+        let x = document.getElementById(imageId);
+        let w = x.width;
+        w = w / 1.5;
+        x.width = w;
+      }
+      document.getElementById("bear").onmouseout = function () {
+        reduce("bear");
+      };
+      document.getElementById("huskies").onmouseout = function () {
+        reduce("huskies");
+      };
+      document.getElementById("pinniped").onmouseout = function () {
+        reduce("pinniped");
+      };
+      document.getElementById("scotland").onmouseout = function () {
+        reduce("scotland");
+      };
+      document.getElementById("hawaii").onmouseout = function () {
+        reduce("hawaii");
+      };
+      document.getElementById("kauai").onmouseout = function () {
+        reduce("kauai");
+      };
+      document.getElementById("hummingbird").onmouseout = function () {
+        reduce("hummingbird");
+      };
+      document.getElementById("river").onmouseout = function () {
+        reduce("river");
+      };
+      document.getElementById("mountain").onmouseout = function () {
+        reduce("mountain");
+      };
+    </script>
   </body>
 
   <div>
